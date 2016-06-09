@@ -13,11 +13,16 @@ while opc!=4:
 		nombre= input("Ingrese estudiante: ")
 		while opc2=="si":
 			notas= int(input("Ingrese nota: "))
-			estudiantes[nombre].append(notas)
+			if funcionlimites.validar(notas)==False:
+				notas= int(input("Ingrese nota entre 0 y 100: "))
+				estudiantes[nombre].append(notas)
+			else:
+				estudiantes[nombre].append(notas)
 			opc2= input("desea seguir? ")
 	elif opc==3:
 		nombre= input("Ingrese estudiante: ")
 		for nota1 in estudiantes[nombre]:
 			print(nota1)
+		print(funcionlimites.promedio(estudiantes[nombre]))
 print("Bai Bai")
 
