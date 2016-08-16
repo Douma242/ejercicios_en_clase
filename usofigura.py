@@ -29,4 +29,5 @@ while opc==1:
 			print ("Area: ",Mtriangulo.calcular_area())
 			print (Mtriangulo.imprimir())
 	opc=int(input("1.Crear figura\n2.Salir\n"))
+print ("Bai Bai")
 
