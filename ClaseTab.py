@@ -1,3 +1,4 @@
 class TabTab(object):
-	def __init__(self, arg1):
+	def __init__(self, tab):
+		self.tab = tab
 		
