@@ -10,6 +10,10 @@ class Explorer(object):
 	def mostrartabs(self):
 		for i in range (0, len(self.tabs)):
 			return self.tabs[i]
+	def eliminartab(self, nombres):
+		self.tabs.pop(nommbres)
 
+	def eliminartodas(self):
+		self.tabs=
 
 
